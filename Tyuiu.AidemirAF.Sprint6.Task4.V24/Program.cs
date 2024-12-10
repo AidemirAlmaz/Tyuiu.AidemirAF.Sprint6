@@ -1,4 +1,4 @@
-namespace Tyuiu.AidemirAF.Sprint6.Task1.V21
+namespace Tyuiu.AidemirAF.Sprint6.Task4.V24
 {
     internal static class Program
     {
