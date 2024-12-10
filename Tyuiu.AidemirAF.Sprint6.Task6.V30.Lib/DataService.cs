@@ -5,7 +5,20 @@ namespace Tyuiu.AidemirAF.Sprint6.Task6.V30.Lib
     {
         public string CollectTextFromFile(string path)
         {
-            
+            string resStr = "";
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string[] lines = File.ReadAllLines(path);
+                foreach (var line in lines)
+                {
+                    string[] words = line.Split(' ');
+                    if (words.Length > 3)
+                    {
+                        resStr += words[3] + ' ';
+                    }
+                }
+            }
+            return resStr;
         }
     }
 }
