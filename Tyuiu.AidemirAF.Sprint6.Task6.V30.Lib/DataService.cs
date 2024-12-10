@@ -18,6 +18,7 @@ namespace Tyuiu.AidemirAF.Sprint6.Task6.V30.Lib
                     }
                 }
             }
+            resStr = resStr.Trim();
             return resStr;
         }
     }
